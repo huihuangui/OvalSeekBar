@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OvalSeekBar">
+        <!--椭圆线条默认颜色-->
+        <attr name="oval_line_color" format="color|reference"></attr>
+        <!--椭圆线条默认粗细-->
+        <attr name="oval_stroke_width" format="dimension|reference"></attr>
+        <!--前端线条开始角度，x轴正向是0度，顺时针计算，前面的这段弧线要绘制进度，所以通过属性确定下来-->
+        <attr name="oval_start_angle" format="integer"></attr>
+        <!--前端线条结束角度-->
+        <attr name="oval_end_angle" format="integer"></attr>
+        <!--进度条渐变颜色初值-->
+        <attr name="oval_progress_start_color" format="color|reference"></attr>
+        <!--进度条渐变颜色终值-->
+        <attr name="oval_progress_end_color" format="color|reference"></attr>
+        <!--进度文字颜色-->
+        <attr name="oval_duration_text_color" format="color|reference"></attr>
+        <!--进度文字大小-->
+        <attr name="oval_duration_text_size" format="dimension|reference"></attr>
+        <!--进度球半径-->
+        <attr name="oval_progress_thumb_radius" format="dimension|reference"></attr>
+        <!--进度球颜色-->
+        <attr name="oval_progress_thumb_color" format="color|reference"></attr>
+        <!--弧线之间间隔度数-->
+        <attr name="oval_arc_gap_angle" format="integer"></attr>
+        <!--旋转时长，如果把一次旋转当成一个动画，那就是动画时长-->
+        <attr name="oval_rotate_duration" format="integer"></attr>
+        <!--旋转角度，如果把一次旋转当成一个动画，那就是动画距离，
+                建议是90度，因为有4条弧线同时旋转，90度正好是一次位置替换-->
+        <attr name="oval_rotate_angle" format="integer"></attr>
+        <attr name="oval_max_progress" format="integer"></attr>
+        <attr name="oval_initial_progress" format="integer"></attr>
+    </declare-styleable>
+</resources>

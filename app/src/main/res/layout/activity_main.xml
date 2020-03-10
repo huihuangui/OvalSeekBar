@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ovalseek="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/rotate_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate Left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/rotate_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <Button
+        android:id="@+id/rotate_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate Right"
+        app:layout_constraintLeft_toRightOf="@id/rotate_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rotate_left" />
+
+    <com.github.huihuangui.ovalseekbar.OvalSeekBar
+        android:id="@+id/oval_seek_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="10dip"
+        android:paddingTop="25dip"
+        android:paddingRight="10dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,5:3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8"
+        ovalseek:oval_arc_gap_angle="6"
+        ovalseek:oval_duration_text_color="#FF6C7190"
+        ovalseek:oval_duration_text_size="12sp"
+        ovalseek:oval_line_color="#AA3F4A6B"
+        ovalseek:oval_progress_end_color="#FF06BDDB"
+        ovalseek:oval_progress_start_color="#FF4C5BFE"
+        ovalseek:oval_progress_thumb_color="#FF06BDDB"
+        ovalseek:oval_progress_thumb_radius="5dp"
+        ovalseek:oval_rotate_angle="90"
+        ovalseek:oval_rotate_duration="600"
+        ovalseek:oval_stroke_width="4dp" />
+
+    <Button
+        android:id="@+id/with_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With ViewPager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/with_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With RecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+</android.support.constraint.ConstraintLayout>
